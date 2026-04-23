@@ -1,2 +1,104 @@
-# Netflix_Content_Analysis
-Data analysis project using Python, SQL Server Management Studio, and Power BI
+# Netflix Content Analysis
+
+**Author:** Matthew Muzofa
+
+---
+
+## 📌 Project Overview
+
+This is an end-to-end data analysis project that covers the full pipeline a data analyst would follow in a real business environment. Starting from a raw dataset, the data was cleaned using Python, stored in SQL Server, and visualised using Power BI to uncover insights about Netflix content trends.
+
+---
+
+## 🗃️ Dataset
+
+- **Source:** [Kaggle — Netflix Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows)
+- **Original Rows:** 8,809 records
+- **Cleaned Rows:** 8,790 records
+- **Data includes:** Titles, directors, cast, country, date added, release year, rating, duration and genre
+
+---
+
+## 🛠️ Tools & Technologies Used
+
+| Tool | Purpose |
+|------|---------|
+| Python (Pandas) | Data cleaning and transformation |
+| Jupyter Notebook | Python development environment |
+| Microsoft SQL Server (SSMS) | Data storage and table creation |
+| Power BI Desktop | Data visualisation and dashboard |
+| Kaggle | Dataset source |
+
+---
+
+## 🔄 Project Pipeline
+
+```
+Raw CSV (Kaggle)
+      ↓
+Python & Pandas (Clean & Transform)
+      ↓
+SQL Server via pyodbc (Store)
+      ↓
+Power BI (Visualise)
+```
+
+---
+
+## 🧹 Data Cleaning Steps (Python)
+
+- Removed duplicate rows
+- Dropped rows with missing values in critical columns (date_added, rating, duration)
+- Filled missing director, cast and country values with "Unknown"
+- Converted date_added from text to proper date format
+- Standardised column names to lowercase with underscores
+
+---
+
+## 📊 Dashboard Visuals (Power BI)
+
+| # | Visual | Description |
+|---|--------|-------------|
+| 1 | Movies vs TV Shows | Donut chart showing content type split |
+| 2 | Top 10 Directors by Number of Titles | Bar chart of most prolific directors |
+| 3 | Content Added Per Year | Line chart showing Netflix growth over time |
+| 4 | Top Ratings Breakdown | Bar chart of content by age rating |
+| 5 | Movies vs TV Shows by Release Year | Line chart comparing content types over time |
+
+---
+
+## 📁 File Structure
+
+```
+Netflix_Content_Analysis/
+│
+├── netflix_titles.csv                  # Original raw dataset
+├── netflix_cleaned.csv                 # Cleaned dataset after Python processing
+├── netflix_cleaning.ipynb              # Jupyter Notebook with Python cleaning code
+├── netflix_create_table.sql            # SQL Server table creation script
+└── netflix_content_analysis.pdf        # Final Power BI dashboard export
+```
+
+---
+
+## 🚀 How to Reproduce
+
+1. Download the dataset from Kaggle (link above)
+2. Open netflix_cleaning.ipynb in Jupyter Notebook and run all cells
+3. Create a database called netflix in SSMS and run netflix_create_table.sql
+4. The notebook will automatically load the cleaned data into SQL Server
+5. Open Power BI Desktop and connect to your netflix SQL Server database
+6. Recreate the visuals using the netflix_titles table
+
+---
+
+## 💡 Key Insights
+
+- Movies make up the majority of Netflix content compared to TV Shows
+- Netflix saw its biggest content growth between 2016 and 2020
+- TV-MA is the most common rating, suggesting Netflix targets adult audiences
+- Content releases have slightly declined after 2020, possibly reflecting post-pandemic production slowdowns
+
+---
+
+*This project is part of my data analyst portfolio. Feel free to explore the files and reach out if you have any feedback.*
