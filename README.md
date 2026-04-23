@@ -94,11 +94,10 @@ Netflix_Content_Analysis/
 
 ## 💡 Key Insights
 
-- Movies make up the majority of Netflix content compared to TV Shows
+- Movies make up the majority of Netflix content in comparison to TV Shows
 - Netflix saw its biggest content growth between 2016 and 2020
-- TV-MA is the most common rating, suggesting Netflix targets adult audiences
-- Content releases have slightly declined after 2020, possibly reflecting post-pandemic production slowdowns
+- TV-MA is the most common rating, which suggests Netflix targets an adult audience
+- Content releases slightly declined after 2020, which is probably a reflection of post-pandemic production slowdowns
 
 ---
 
-*This project is part of my data analyst portfolio. Feel free to explore the files and reach out if you have any feedback.*
