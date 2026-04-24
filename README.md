@@ -13,9 +13,9 @@ This is an end-to-end data analysis project that covers the full pipeline a data
 ## 🗃️ Dataset
 
 - **Source:** [Kaggle — Netflix Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows)
-- **Original Rows:** 8,809 records
-- **Cleaned Rows:** 8,790 records
-- **Data includes:** Titles, directors, cast, country, date added, release year, rating, duration and genre
+- **Original Dataset:** 8,809 records
+- **Cleaned Dataset:** 8,790 records
+- **Data includes:** Titles, directors, cast, country, date added, release year, rating, duration, and genre
 
 ---
 
