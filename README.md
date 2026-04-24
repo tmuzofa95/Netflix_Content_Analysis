@@ -19,13 +19,13 @@ This is an end-to-end data analysis project that covers the full pipeline a data
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## 🛠️ Tools Used
 
 | Tool | Purpose |
 |------|---------|
 | Python (Pandas) | Data cleaning and transformation |
 | Jupyter Notebook | Python development environment |
-| Microsoft SQL Server (SSMS) | Data storage and table creation |
+| Microsoft SQL Server Management Studio (SSMS) | Data storage and table creation |
 | Power BI Desktop | Data visualisation and dashboard |
 | Kaggle | Dataset source |
 
@@ -34,13 +34,13 @@ This is an end-to-end data analysis project that covers the full pipeline a data
 ## 🔄 Project Pipeline
 
 ```
-Raw CSV (Kaggle)
+Raw Dataset (Kaggle)
       ↓
-Python & Pandas (Clean & Transform)
+Python (Clean & Transform)
       ↓
-SQL Server via pyodbc (Store)
+SQL Server via pyodbc (Storage)
       ↓
-Power BI (Visualise)
+Power BI (Visualisation)
 ```
 
 ---
