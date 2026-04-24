@@ -6,13 +6,13 @@
 
 ## 📌 Project Overview
 
-This is an end-to-end data analysis project that covers the full pipeline a data analyst would follow in a real business environment. Starting from a raw dataset, the data was cleaned using Python, stored in SQL Server, and visualised using Power BI to uncover insights about Netflix content trends.
+This is an end-to-end data analysis project that covers the pipeline a data analyst would follow in a business environment. Starting from the raw dataset, the data was cleaned using Python, stored in SQL Server, and then visualised using Power BI to uncover insights about Netflix content trends.
 
 ---
 
 ## 🗃️ Dataset
 
-- **Source:** [Kaggle — Netflix Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows)
+- **Source:** [Kaggle - Netflix Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows)
 - **Original Dataset:** 8,809 records
 - **Cleaned Dataset:** 8,790 records
 - **Data includes:** Titles, directors, cast, country, date added, release year, rating, duration, and genre
@@ -74,8 +74,8 @@ Netflix_Content_Analysis/
 │
 ├── netflix_titles.csv                  # Original dataset
 ├── netflix_cleaned.csv                 # Cleaned dataset
-├── import_netflix_data.ipynb              # Jupyter Notebook with Python cleaning code
-├── NetflixDB.sql            # SQL Server table creation script
+├── import_netflix_data.ipynb           # Jupyter Notebook with Python cleaning code
+├── NetflixDB.sql                       # SQL Server table creation script
 └── netflix_content_analysis.pdf        # Power BI dashboard
 ```
 
@@ -84,9 +84,9 @@ Netflix_Content_Analysis/
 ## 🚀 How to Reproduce
 
 1. Download the dataset from Kaggle (link above)
-2. Open netflix_cleaning.ipynb in Jupyter Notebook and run all cells
-3. Create a database called netflix in SSMS and run netflix_create_table.sql
-4. The notebook will automatically load the cleaned data into SQL Server
+2. Open import_netflix_data.ipynb in Jupyter Notebook and run all cells
+3. Create a database called netflix in SSMS and run NetflixDB.sql
+4. The notebook will then automatically load the cleaned data into SQL Server
 5. Open Power BI Desktop and connect to your netflix SQL Server database
 6. Recreate the visuals using the netflix_titles table
 
