@@ -48,8 +48,8 @@ Power BI (Visualisation)
 ## 🧹 Data Cleaning Steps (Python)
 
 - Removed duplicate rows
-- Dropped rows with missing values in critical columns (date_added, rating, duration)
-- Filled missing director, cast and country values with "Unknown"
+- Dropped rows with missing values in critical columns
+- Filled missing director, cast, and country values with "Unknown"
 - Converted date_added from text to proper date format
 - Standardised column names to lowercase with underscores
 
@@ -61,9 +61,9 @@ Power BI (Visualisation)
 |---|--------|-------------|
 | 1 | Movies vs TV Shows | Donut chart showing content type split |
 | 2 | Top 10 Directors by Number of Titles | Bar chart of most prolific directors |
-| 3 | Content Added Per Year | Line chart showing Netflix growth over time |
+| 3 | Content Added Per Year | Line chart showing Netflix growth over the years |
 | 4 | Top Ratings Breakdown | Bar chart of content by age rating |
-| 5 | Movies vs TV Shows by Release Year | Line chart comparing content types over time |
+| 5 | Movies vs TV Shows by Release Year | Line chart comparing content types over the years |
 
 ---
 
@@ -72,11 +72,11 @@ Power BI (Visualisation)
 ```
 Netflix_Content_Analysis/
 │
-├── netflix_titles.csv                  # Original raw dataset
-├── netflix_cleaned.csv                 # Cleaned dataset after Python processing
-├── netflix_cleaning.ipynb              # Jupyter Notebook with Python cleaning code
-├── netflix_create_table.sql            # SQL Server table creation script
-└── netflix_content_analysis.pdf        # Final Power BI dashboard export
+├── netflix_titles.csv                  # Original dataset
+├── netflix_cleaned.csv                 # Cleaned dataset
+├── import_netflix_data.ipynb              # Jupyter Notebook with Python cleaning code
+├── NetflixDB.sql            # SQL Server table creation script
+└── netflix_content_analysis.pdf        # Power BI dashboard
 ```
 
 ---
